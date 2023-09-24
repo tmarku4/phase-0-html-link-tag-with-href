@@ -1,1 +1,29 @@
-<!-- Write your HTML in this file -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Element Content and Attribute</title>
+    <script>
+        window.onload = function() {
+        
+            var element = document.getElementById("myElement");
+
+            // Check if the element has the text content 'Flatiron School'
+            if (element.textContent === 'Flatiron School') {
+                console.log("The element has the text content 'Flatiron School'");
+            } else {
+                console.log("The element does not have the text content 'Flatiron School'");
+            }
+
+            // Check if the element has the href attribute 'https://flatironschool.com'
+            if (element.getAttribute('href') === 'https://flatironschool.com') {
+                console.log("The element has the href attribute 'https://flatironschool.com'");
+            } else {
+                console.log("The element does not have the href attribute 'https://flatironschool.com'");
+            }
+        }
+    </script>
+</head>
+<body>
+    <a id="myElement" href="https://flatironschool.com">Flatiron School</a>
+</body>
+</html>
